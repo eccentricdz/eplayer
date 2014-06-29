@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+body
+{
+	background: url(images/background.jpg);
+	background-size: cover;
+}
+#loading
+{
+					background: #ebe9dc;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:100;
+	width: 100%;
+}
+#loading img
+{
+	margin-top: 20%;
+}
+#loading p
+{margin-top: 10px;
+font-size: 1.2em;
+	font-family: calibri;
+	opacity: 0.6; 
+ 	color: #69685e;
+	letter-spacing: 4px;
+}
+.wrapper > div
+{
+	/*border: 1px solid black;*/
+}
+ul
+{
+	list-style-type: none;
+	cursor: pointer;
+}
+.wrapper
+{
+	width: 800px;
+	position: relative;
+	margin: 85px auto;
+	padding-bottom: 100px;
+	
+}
+.top
+{
+	width: 300px;
+	height: 50px;
+	position:relative;
+	top: 0px;
+	left:440px;
+}
+.body
+{
+	width: 800px;
+	height: 150px;
+	position:relative;
+}
+.bottom
+{
+		width: 687px;
+	height: 55px;
+	position:absolute;
+	left: 57px;
+	overflow: hidden;
+
+}
+
+
+
+.top ul.muting
+{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	overflow: hidden;
+	/*border: 1px red solid;*/
+}
+.top ul.muting li
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	float: left;
+	display: block;
+}
+	.top ul.muting li#mute
+	{
+		background: url(images/mute.png);
+		-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+			
+	}
+	.top ul.muting li#mute:hover
+	{
+		background: url(images/mute%20hover.png);
+	}
+	.top ul.muting li#unmute
+	{-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+
+		background: url(images/unmute.png);
+	}
+	.top ul.muting li#unmute:hover
+	{
+		background: url(images/unmute%20hover.png);
+	}
+	.top #volume-bar
+	{
+		position: relative;
+		width: 82%;
+		height: 2px;
+		background: #a1a291;
+		top: -27px;
+		left: 53px;
+		z-index:1;
+	}
+	.top #volume-bar-value
+	{
+		position: relative;
+		width: 41%;
+		height: 2px;
+		background: #3fabbe;
+		top: -29px;
+		left: 53px;
+		-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+		z-index: 2;
+	}
+	.top #vbar
+	{
+		position: absolute;
+		width: 82%;
+		height: 6px;
+		top: 23px;
+		left: 53px;
+		z-index:5;
+		cursor: pointer;
+			
+	
+	}
+	
+	
+	.body
+	{
+		background: url(images/gui%20back.png);
+	}
+	
+	.body ul.pp
+	{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	overflow: hidden;
+	/*border: 1px solid black;*/
+	top: 43px;
+	left: 215px;
+	}
+		.body ul.pp li
+		{
+			height: 100%;
+	width: 100%;
+	position: relative;
+	display: block;
+		}
+		.body ul.pp li#play
+		{-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+
+			background: url(images/play.png);
+		}
+		.body ul.pp li#play:hover
+		{
+			background: url(images/play%20hover.png);
+		}
+		.body ul.pp li#pause
+		{-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+
+			background: url(images/pause.png);
+		}
+		.body ul.pp li#pause:hover
+		{
+			background: url(images/pause%20hover.png);
+		}
+	
+	.body ul.nav
+	{
+		width: 23px;
+		height: 48px;
+		overflow: hidden;
+		/*border: 1px solid black;*/
+		position:relative;
+		left: 300px;
+		top: -3px; 
+	}
+			.body ul.nav li
+			{
+				height: 20px;
+				width: 100%;
+				position: relative;
+				display: block;
+			
+			}
+				.body ul.nav li#next
+			{-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+
+			background: url(images/next.png);
+			}
+					.body ul.nav li#prev
+					{-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+
+						background:url(images/prev.png);
+						top: 5px;
+					}
+						.body ul.nav li#next:hover
+			{
+			background: url(images/next%20hover.png);
+			}
+					.body ul.nav li#prev:hover
+					{
+						background:url(images/prev%20hover.png);
+					}
+					@font-face
+					{
+						font-family: comfortaar;
+						src: url(Comfortaa-Regular.ttf);
+					}
+					@font-face
+					{
+						font-family: comfortaal;
+						src: url(Comfortaa-Light.ttf);
+					}
+					.body > h3#song
+					{
+						font-family: comfortaar;
+						color: #69685e;
+						position: absolute;
+						top: 45px;
+						font-size: 15pt;
+						font-weight: lighter;
+						left: 360px;
+					}
+					.body > p#artist
+					{
+						font-family: comfortaal;
+						color: #69685e;
+						position: absolute;
+						top: 70px;
+						left: 360px;
+						
+					}
+					
+					.body img
+					{
+						width: 110px;
+						height: 110px;
+						
+						position:absolute;
+						top: 13px;
+						left: 63px;
+					}
+					.bottom div
+					{
+						background-position: center;
+					}
+.bottom div.progressbar
+{
+	position:absolute;
+	z-index:2;
+	width: 100%;
+	height: 15px;
+
+	background: url(images/progree%20bar.png);
+}
+					
+.bottom div#seekbar
+{
+	position:absolute;
+	z-index:1;
+	width: 0%;
+	height: 15px;
+
+	background: url(images/load%20bar.png);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+}
+				.bottom div#playbar
+{
+	position:absolute;
+	z-index:3;
+	width: 0%;
+	height: 33px;
+
+	background: url(images/play%20bar.png);
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+}
+.bottom #bars
+{
+	width: 0%;
+	height: 15px;
+	position:absolute;
+	z-index: 4;
+	cursor: pointer;
+}
+
+				.bottom p
+				{
+					font-family: Arial, Helvetica, sans-serif;
+					color: #69685e;
+					position: absolute;
+				}
+						.bottom p#current
+						{
+						top: 30px;
+						left: 0px;
+						}
+					.bottom p#duration
+						{
+						top: 30px;
+						left: 648px;
+						}
+					
+					#playlist
+					{
+						width: 687px;
+						list-style-type: none;
+						position: relative;
+						left: 57px;
+						top: 100px;
+							height: 230px;
+						overflow: auto;
+				
+					
+					}
+					#playlist > li
+					{
+						background: #ebe9dc;
+						-webkit-box-shadow: inset 1px 1px 2px rgba(255,255,255,0.5), 1px 1px 2px rgba(0,0,0,0.3);
+						-moz-box-shadow: inset 1px 1px 2px rgba(255,255,255,0.5), 1px 1px 2px rgba(0,0,0,0.3);
+						height: 50px;
+						width: 100%;
+						position: relative;
+						margin-bottom:10px;
+					}
+						#playlist > li:last-child
+						{
+							margin: 0;
+						}
+					#playlist > li:hover > h3
+					{
+						color: #333;
+					}
+						
+					#playlist > li > h3
+					{
+						font-family: comfortaar;
+						color: #69685e;
+						display: inline-block;
+						padding-top: 15px;
+						padding-left: 20px;
+						-webkit-transition: all 0.1s linear;
+						-moz-transition: all 0.1s linear;
+						font-weight: lighter;
+					}
+					#playlist > li.active > h3
+					{
+						color: #0CF;
+					}
+					#playlist > li > p.part
+					{
+						font-family: comfortaal;
+						color: #69685e;
+						display: inline-block;
+						padding-top: 5px;
+						text-align: right;
+						left: 500px;
+						font-size: 0.9em;
+						position: absolute;
+						top: 15px;
+						right: 20px;
+					}
+							
+							::-webkit-scrollbar
+							{
+								width: 5px;
+							}
+							::-webkit-scrollbar-track
+							{
+							background: #ebe9dc;
+							}
+							::-webkit-scrollbar-thumb
+							{
+								background: #099;
+								-webkit-border-radius: 20px;
+							}

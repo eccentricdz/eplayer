@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eplayer</title>
+<link rel="stylesheet" href="style.css"  />
+
+
+</head>
+
+<body>
+<div id="loading"><center><img src="images/e.png" />
+<p>player</p></center></div>
+<audio id="eplayer">
+<source type="audio/mp3" src="http://mp3.com.ua/audio/88364173/10450880/Eminem_amp_Green_Day_amp_Oasis_amp_Travis_amp_Aerosmith-Boulevard_of_Broken_Dreams___Wonderwall___Writing_To_Reach_You___Dream_On_Boulevard_of_broken_songs(mp3.com.ua).mp3" />
+<!-- <source type="audio/ogg" src="songs/Boulevard_Of_Broken_Dreams.ogg"/> -->
+</audio>
+
+<div class="wrapper">
+	<div class="top">
+    	<ul class="muting">
+        	<li id="mute"></li>
+            <li id="unmute"></li>
+            </ul>
+            
+            <div class="volume">
+            <div id="vbar"></div>
+            	<div id="volume-bar"></div>
+                <div id="volume-bar-value"></div>
+                </div>
+                
+      </div>
+      
+      
+      
+      
+      <div class="body">
+                	<ul class="pp">
+                    	<li id="play"></li>
+                        <li id="pause"></li>
+                        </ul>
+                        
+                        <ul class="nav">
+                        <li id="next"></li>
+                        <li id="prev"></li>
+                        </ul>
+                        
+                        <h3 id="song">Bouleavard Of Broken Dreams</h3>
+                        <p id="artist">Greenday</p>
+                        
+                        <img id="cover" src="cover/Green-Day.png" />
+       </div>
+       
+       
+       
+       <div class="bottom">
+       <div id="bars"></div>
+       		<div class="progressbar"></div>
+            <div id="seekbar"></div>
+            <div id="playbar"></div>
+           
+            <p id="current">00:00</p>
+            <p id="duration"></p>
+            </div>
+                
+                       <ul id="playlist">
+                       
+                       <li id="pl" class="pltrak" trackid="0">  
+                       <h3>Bouleavard Of Broken Dreams</h3>
+                        <p class="part">Greenday</p>
+                         </li>
+                         
+                       	</ul> 
+                     
+                 </div>
+           <script src="js/jquery-1.8.2.js"></script>            	
+        <script src="eplayer.js"></script>           
+</body>
+</html>
